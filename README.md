@@ -1,6 +1,6 @@
 Hey there! My name is Mallavarapu Krishna Koushik Reddy
 ==========================================================================================================================================================
-[![Visit My Portfolio](https://img.shields.io/badge/Visit%20My%20Portfolio-kkprofessional.vercel.ai-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kkprofessional.vercel.ai)
+[![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000)](https://kkprofessional.vercel.app)
 
 <a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=3382ed&labelColor=000000" /></a>
