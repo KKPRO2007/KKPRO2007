@@ -1,7 +1,7 @@
 Hey there! My name is Mallavarapu Krishna Koushik Reddy
 ==========================================================================================================================================================
-## Step inside my portfolio to explore more about me  
-[![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=40)](https://kkprofessional.vercel.app)
+
+## Step inside my portfolio to explore more about me  [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=40)](https://kkprofessional.vercel.app)
 
 
 
