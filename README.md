@@ -4,13 +4,17 @@ Hey there! Check out my portfolio to know more about me
 
    
 
+![Profile Views](https://komarev.com/ghpvc/?username=KKPRO2007&label=Profile%20views&color=000000&style=flat)
 <a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=3382ed&labelColor=000000" /></a>
 ### Badges
 
 <b>My GitHub Statix</b>
 
-![Profile Views](https://komarev.com/ghpvc/?username=KKPRO2007&label=Profile%20views&color=000000&style=flat)
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20">
+  <rect width="120" height="20" fill="white"/>
+  <text x="60" y="14" font-family="sans-serif" font-size="12" fill="black" text-anchor="middle">Views: 10000</text>
+</svg>
 
 
 
