@@ -10,8 +10,8 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
 
 <b>My GitHub Statix</b>
 
-![](https://komarev.com/ghpvc/?username=KKPRO2007&style=pixel&color=black)
-![](https://komarev.com/ghpvc/?username=KKPRO2007&style=flat&color=black)
+![My Views](https://github.com/KKPRO2007/KKPRO2007/blob/main/counter.svg)
+
 
 
 
