@@ -10,7 +10,8 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
 
 <b>My GitHub Statix</b>
 
-![My Views](https://github.com/KKPRO2007/KKPRO2007/blob/main/counter.svg)
+![Views](https://github.com/KKPRO2007/KKPRO2007/blob/main/counter.svg)
+
 
 
 
