@@ -1,0 +1,35 @@
+name: Update View Counter
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Read and increment count
+        run: |
+          if [ -f "counter.txt" ]; then
+            COUNT=$(cat counter.txt)
+            NEW_COUNT=$((COUNT + 1))
+          else
+            NEW_COUNT=1
+          fi
+          echo $NEW_COUNT > counter.txt
+          echo "Counter updated to $NEW_COUNT"
+      - name: Generate SVG
+        run: |
+          cat > counter.svg << EOF
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20">
+  <rect width="120" height="20" fill="white"/>
+  <text x="60" y="14" font-family="sans-serif" font-size="12" fill="black" text-anchor="middle">Views: $(cat counter.txt)</text>
+</svg>
+EOF
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add counter.txt counter.svg
+          git commit -m "Update view count: $(cat counter.txt)" || exit 0
+          git push
