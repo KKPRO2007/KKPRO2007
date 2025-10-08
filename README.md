@@ -2,12 +2,6 @@ Hey there! Check out my portfolio to know more about me
 ==========================================================================================================================================================
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
 
-
-   ![Views](https://img.shields.io/badge/Profile%20views-10000-000000?style=flat&logo=github)
-
-
-
-
 <a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=3382ed&labelColor=000000" /></a>
 ### Badges
