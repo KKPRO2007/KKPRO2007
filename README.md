@@ -1,6 +1,7 @@
 Hey there! Check out my portfolio to know more about me
 ==========================================================================================================================================================
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
+![Views](https://github.com/KKPRO2007/KKPRO2007/blob/main/counter.svg)
 
    
 
@@ -10,11 +11,6 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
 ### Badges
 
 <b>My GitHub Statix</b>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20">
-  <rect width="120" height="20" fill="white"/>
-  <text x="60" y="14" font-family="sans-serif" font-size="12" fill="black" text-anchor="middle">Views: 10000</text>
-</svg>
 
 
 
