@@ -6,7 +6,7 @@ import requests
 # -------------------------------
 USERNAME = "KKPRO2007"
 README_PATH = "README.md"
-TOKEN = os.getenv("GH_TOKEN")
+TOKEN = os.getenv("GITHUB_TOKEN")
 
 if not TOKEN:
     raise ValueError("❌ Please set your GH_TOKEN environment variable.")

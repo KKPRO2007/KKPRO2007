@@ -26,17 +26,15 @@
 <h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>
 
 <div align='center' style='background:#000;padding:15px;border-radius:12px;'>
-<p><b>JavaScript</b> — 84.12%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:84.12%;'></div></div>
-<p><b>TypeScript</b> — 7.63%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:7.63%;'></div></div>
-<p><b>CSS</b> — 6.31%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:6.31%;'></div></div>
-<p><b>HTML</b> — 0.86%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.86%;'></div></div>
-<p><b>SCSS</b> — 0.62%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.62%;'></div></div>
-<p><b>MDX</b> — 0.46%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.46%;'></div></div>
+<p><b>JavaScript</b> — 48.46%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:48.46%;'></div></div>
+<p><b>CSS</b> — 24.54%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:24.54%;'></div></div>
+<p><b>HTML</b> — 21.41%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:21.41%;'></div></div>
+<p><b>Java</b> — 5.36%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:5.36%;'></div></div>
+<p><b>Python</b> — 0.24%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.24%;'></div></div>
 </div>
 <!--END_SECTION:top_langs-->
