@@ -4,9 +4,9 @@ import requests
 USERNAME = os.getenv("GITHUB_USER")
 TOKEN = os.getenv("GH_TOKEN")
 
-# Fetch all repos
-url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100"
-repos = requests.get(url, auth=(USERNAME, TOKEN)).json()
+# Fetch all repos (public + private)
+repos_url = f"https://api.github.com/user/repos?per_page=100"
+repos = requests.get(repos_url, auth=(USERNAME, TOKEN)).json()
 
 lang_totals = {}
 for repo in repos:
@@ -22,16 +22,19 @@ top_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)[:10]
 # Generate markdown
 markdown = ""
 for lang, bytes_count in top_langs:
-    markdown += f"- **{lang}**: {bytes_count} bytes\n"
+    markdown += f"- {lang}: {bytes_count} bytes\n"
 
-# Update README.md (replace placeholder)
+# Update README.md
 with open("README.md", "r") as f:
     content = f.read()
 
 start_marker = "<!--LANGUAGES_START-->"
 end_marker = "<!--LANGUAGES_END-->"
 
-new_content = content.split(start_marker)[0] + start_marker + "\n" + markdown + end_marker + content.split(end_marker)[1]
+before = content.split(start_marker)[0] + start_marker + "\n"
+after = content.split(end_marker)[1]
+
+new_content = before + markdown + end_marker + after
 
 with open("README.md", "w") as f:
     f.write(new_content)
