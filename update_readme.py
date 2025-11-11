@@ -5,7 +5,7 @@ import requests
 # CONFIG
 # -------------------------------
 USERNAME = "KKPRO2007"
-README_PATH = "README.md"
+README_PATH = "README.md"  # go up one folder (if script is in /scripts)
 TOKEN = os.getenv("GITHUB_TOKEN")
 
 if not TOKEN:
@@ -14,7 +14,7 @@ if not TOKEN:
 headers = {"Authorization": f"token {TOKEN}"}
 
 # -------------------------------
-# FETCH REPOS (INCLUDE PRIVATE)
+# FETCH REPOS
 # -------------------------------
 repos_url = f"https://api.github.com/user/repos?per_page=100&type=all"
 response = requests.get(repos_url, headers=headers)
@@ -26,7 +26,7 @@ repos = response.json()
 print(f"✅ Found {len(repos)} repositories")
 
 # -------------------------------
-# CALCULATE TOP LANGUAGES
+# CALCULATE LANGUAGES
 # -------------------------------
 lang_totals = {}
 
@@ -43,10 +43,23 @@ if not lang_totals:
     print("⚠️ No language data found.")
     exit()
 
-# Sort by usage
+total_bytes = sum(lang_totals.values())
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
-top_langs = [f"{lang}" for lang, _ in sorted_langs[:6]]
-print("🏆 Top Languages:", ", ".join(top_langs))
+
+# -------------------------------
+# CREATE LANGUAGE BAR SECTION
+# -------------------------------
+top_langs_html = "<!--START_SECTION:top_langs-->\n"
+top_langs_html += "<h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>\n\n"
+top_langs_html += "<div align='center' style='background:#000;padding:15px;border-radius:12px;'>\n"
+
+for lang, bytes_count in sorted_langs[:10]:
+    percent = (bytes_count / total_bytes) * 100
+    top_langs_html += f"<p><b>{lang}</b> — {percent:.2f}%</p>\n"
+    top_langs_html += f"<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'>"
+    top_langs_html += f"<div style='background:#3382ed;height:8px;border-radius:8px;width:{percent:.2f}%;'></div></div>\n"
+
+top_langs_html += "</div>\n<!--END_SECTION:top_langs-->"
 
 # -------------------------------
 # UPDATE README
@@ -57,16 +70,13 @@ with open(README_PATH, "r", encoding="utf-8") as f:
 start_tag = "<!--START_SECTION:top_langs-->"
 end_tag = "<!--END_SECTION:top_langs-->"
 
-new_section = f"{start_tag}\n**Top Languages (Including Private Repos):**\n\n" + \
-              " | ".join(top_langs) + f"\n{end_tag}"
-
 if start_tag in content and end_tag in content:
     old_section = content.split(start_tag)[1].split(end_tag)[0]
-    content = content.replace(f"{start_tag}{old_section}{end_tag}", new_section)
+    content = content.replace(f"{start_tag}{old_section}{end_tag}", top_langs_html)
 else:
-    content += "\n\n" + new_section
+    content += "\n\n" + top_langs_html
 
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print("✅ README updated successfully!")
+print("✅ README updated successfully with styled Top Languages!")

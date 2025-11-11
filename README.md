@@ -18,9 +18,20 @@
 ## Top Languages
 
 <!--START_SECTION:top_langs-->
-**Top Languages (Including Private Repos):**
+<h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>
 
-JavaScript | CSS | HTML | Java | Python
+<div align='center' style='background:#000;padding:15px;border-radius:12px;'>
+<p><b>JavaScript</b> — 48.48%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:48.48%;'></div></div>
+<p><b>CSS</b> — 24.55%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:24.55%;'></div></div>
+<p><b>HTML</b> — 21.42%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:21.42%;'></div></div>
+<p><b>Java</b> — 5.36%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:5.36%;'></div></div>
+<p><b>Python</b> — 0.19%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.19%;'></div></div>
+</div>
 <!--END_SECTION:top_langs-->
 
 
