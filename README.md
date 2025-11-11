@@ -1,62 +1,89 @@
-# Hey there! Check out my portfolio to know more about me
+import os
+import requests
 
-[![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
+# -------------------------------
+# CONFIG
+# -------------------------------
+USERNAME = "KKPRO2007"
+README_PATH = "README.md"
+TOKEN = os.getenv("GH_TOKEN")
 
-<a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer">
-  <img src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=3382ed&labelColor=000000" />
-</a>
+if not TOKEN:
+    raise ValueError("❌ Please set your GH_TOKEN environment variable.")
 
-## GitHub Stats
+headers = {"Authorization": f"token {TOKEN}"}
 
-<a href="http://www.github.com/KKPRO2007">
-  <img 
-       src="https://github-readme-stats.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&hide=stars,&title_color=ffffff&text_color=ffffff&icon_color=3382ed&bg_color=000000&hide_border=true&show_icons=true" 
-       alt="KKPRO2007's GitHub stats" 
-  />
-</a>
+# -------------------------------
+# FETCH REPOS
+# -------------------------------
+repos_url = f"https://api.github.com/user/repos?per_page=100&type=all"
+response = requests.get(repos_url, headers=headers)
+if response.status_code != 200:
+    print("❌ Error fetching repos:", response.json())
+    exit()
 
-<img 
-     src="https://github-readme-streak-stats-eight.vercel.app?user=KKPRO2007&stroke=ffffff&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" 
-     alt="GitHub Streak"
-/>
+repos = response.json()
+print(f"✅ Found {len(repos)} repositories")
 
-## Top Languages
+# -------------------------------
+# CALCULATE LANGUAGES
+# -------------------------------
+lang_totals = {}
 
-<!--START_SECTION:top_langs-->
-<div align="center" style="background:#000; padding:20px; border-radius:10px; margin:20px 0;">
-  <h3 style="color:#fff; margin-bottom:20px;">Top Languages (Including Private Repos)</h3>
-  
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 600px; margin: 0 auto;">
-    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
-      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">JavaScript — 48.46%</p>
-      <div style="background:#333; border-radius:4px; height:8px;">
-        <div style="background:#3382ed; height:8px; border-radius:4px; width:48.46%;"></div>
-      </div>
-    </div>
-    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
-      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">CSS — 24.53%</p>
-      <div style="background:#333; border-radius:4px; height:8px;">
-        <div style="background:#3382ed; height:8px; border-radius:4px; width:24.53%;"></div>
-      </div>
-    </div>
-    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
-      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">HTML — 21.41%</p>
-      <div style="background:#333; border-radius:4px; height:8px;">
-        <div style="background:#3382ed; height:8px; border-radius:4px; width:21.41%;"></div>
-      </div>
-    </div>
-    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
-      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">Java — 5.36%</p>
-      <div style="background:#333; border-radius:4px; height:8px;">
-        <div style="background:#3382ed; height:8px; border-radius:4px; width:5.36%;"></div>
-      </div>
-    </div>
-    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
-      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">Python — 0.24%</p>
-      <div style="background:#333; border-radius:4px; height:8px;">
-        <div style="background:#3382ed; height:8px; border-radius:4px; width:0.24%;"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--END_SECTION:top_langs-->
+for repo in repos:
+    repo_name = repo["name"]
+    lang_url = f"https://api.github.com/repos/{USERNAME}/{repo_name}/languages"
+    lang_response = requests.get(lang_url, headers=headers)
+    if lang_response.status_code == 200:
+        langs = lang_response.json()
+        for lang, bytes_count in langs.items():
+            lang_totals[lang] = lang_totals.get(lang, 0) + bytes_count
+
+if not lang_totals:
+    print("⚠️ No language data found.")
+    exit()
+
+total_bytes = sum(lang_totals.values())
+sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
+
+# -------------------------------
+# CREATE LANGUAGE BAR SECTION (Updated with full CSS styling)
+# -------------------------------
+top_langs_html = "<!--START_SECTION:top_langs-->\n"
+top_langs_html += '<div align="center" style="background:#000; padding:20px; border-radius:10px; margin:20px 0; max-width:600px; color:#fff; text-align:center; font-family:Arial,sans-serif;">\n'
+top_langs_html += '  <h3 style="color:#fff; margin-bottom:20px;">Top Languages (Including Private Repos)</h3>\n'
+top_langs_html += '  \n'
+top_langs_html += '  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; max-width:600px; margin:0 auto;">\n'
+
+for lang, bytes_count in sorted_langs[:5]:
+    percent = (bytes_count / total_bytes) * 100
+    top_langs_html += f'    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">\n'
+    top_langs_html += f'      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">{lang} — {percent:.2f}%</p>\n'
+    top_langs_html += f'      <div style="background:#333; border-radius:4px; height:8px; width:100%;">\n'
+    top_langs_html += f'        <div style="background:#3382ed; height:8px; border-radius:4px; width:{percent:.2f}%;"></div>\n'
+    top_langs_html += f'      </div>\n'
+    top_langs_html += f'    </div>\n'
+
+top_langs_html += '  </div>\n'
+top_langs_html += '</div>\n'
+top_langs_html += '<!--END_SECTION:top_langs-->'
+
+# -------------------------------
+# UPDATE README
+# -------------------------------
+with open(README_PATH, "r", encoding="utf-8") as f:
+    content = f.read()
+
+start_tag = "<!--START_SECTION:top_langs-->"
+end_tag = "<!--END_SECTION:top_langs-->"
+
+if start_tag in content and end_tag in content:
+    old_section = content.split(start_tag)[1].split(end_tag)[0]
+    content = content.replace(f"{start_tag}{old_section}{end_tag}", top_langs_html)
+else:
+    content += "\n\n" + top_langs_html
+
+with open(README_PATH, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print("✅ README updated successfully with styled Top Languages!")
