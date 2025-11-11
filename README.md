@@ -18,6 +18,9 @@
 ## Top Languages
 
 <!--START_SECTION:top_langs-->
+**Top Languages (Including Private Repos):**
+
+JavaScript | CSS | HTML | Java | Python
 <!--END_SECTION:top_langs-->
 
 
