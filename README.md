@@ -23,18 +23,40 @@
 ## Top Languages
 
 <!--START_SECTION:top_langs-->
-<h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>
-
-<div align='center' style='background:#000;padding:15px;border-radius:12px;'>
-<p><b>JavaScript</b> — 48.46%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:48.46%;'></div></div>
-<p><b>CSS</b> — 24.54%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:24.54%;'></div></div>
-<p><b>HTML</b> — 21.41%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:21.41%;'></div></div>
-<p><b>Java</b> — 5.36%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:5.36%;'></div></div>
-<p><b>Python</b> — 0.24%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.24%;'></div></div>
+<div align="center" style="background:#000; padding:20px; border-radius:10px; margin:20px 0;">
+  <h3 style="color:#fff; margin-bottom:20px;">Top Languages (Including Private Repos)</h3>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 600px; margin: 0 auto;">
+    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
+      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">JavaScript — 48.46%</p>
+      <div style="background:#333; border-radius:4px; height:8px;">
+        <div style="background:#3382ed; height:8px; border-radius:4px; width:48.46%;"></div>
+      </div>
+    </div>
+    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
+      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">CSS — 24.53%</p>
+      <div style="background:#333; border-radius:4px; height:8px;">
+        <div style="background:#3382ed; height:8px; border-radius:4px; width:24.53%;"></div>
+      </div>
+    </div>
+    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
+      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">HTML — 21.41%</p>
+      <div style="background:#333; border-radius:4px; height:8px;">
+        <div style="background:#3382ed; height:8px; border-radius:4px; width:21.41%;"></div>
+      </div>
+    </div>
+    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
+      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">Java — 5.36%</p>
+      <div style="background:#333; border-radius:4px; height:8px;">
+        <div style="background:#3382ed; height:8px; border-radius:4px; width:5.36%;"></div>
+      </div>
+    </div>
+    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">
+      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">Python — 0.24%</p>
+      <div style="background:#333; border-radius:4px; height:8px;">
+        <div style="background:#3382ed; height:8px; border-radius:4px; width:0.24%;"></div>
+      </div>
+    </div>
+  </div>
 </div>
 <!--END_SECTION:top_langs-->

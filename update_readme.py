@@ -47,19 +47,26 @@ total_bytes = sum(lang_totals.values())
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
 
 # -------------------------------
-# CREATE LANGUAGE BAR SECTION
+# CREATE LANGUAGE BAR SECTION (Updated CSS)
 # -------------------------------
 top_langs_html = "<!--START_SECTION:top_langs-->\n"
-top_langs_html += "<h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>\n\n"
-top_langs_html += "<div align='center' style='background:#000;padding:15px;border-radius:12px;'>\n"
+top_langs_html += '<div align="center" style="background:#000; padding:20px; border-radius:10px; margin:20px 0;">\n'
+top_langs_html += '  <h3 style="color:#fff; margin-bottom:20px;">Top Languages (Including Private Repos)</h3>\n'
+top_langs_html += '  \n'
+top_langs_html += '  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 600px; margin: 0 auto;">\n'
 
-for lang, bytes_count in sorted_langs[:6]:
+for i, (lang, bytes_count) in enumerate(sorted_langs[:5]):
     percent = (bytes_count / total_bytes) * 100
-    top_langs_html += f"<p><b>{lang}</b> — {percent:.2f}%</p>\n"
-    top_langs_html += f"<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'>"
-    top_langs_html += f"<div style='background:#3382ed;height:8px;border-radius:8px;width:{percent:.2f}%;'></div></div>\n"
+    top_langs_html += f'    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">\n'
+    top_langs_html += f'      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">{lang} — {percent:.2f}%</p>\n'
+    top_langs_html += f'      <div style="background:#333; border-radius:4px; height:8px;">\n'
+    top_langs_html += f'        <div style="background:#3382ed; height:8px; border-radius:4px; width:{percent:.2f}%;"></div>\n'
+    top_langs_html += f'      </div>\n'
+    top_langs_html += f'    </div>\n'
 
-top_langs_html += "</div>\n<!--END_SECTION:top_langs-->"
+top_langs_html += '  </div>\n'
+top_langs_html += '</div>\n'
+top_langs_html += '<!--END_SECTION:top_langs-->'
 
 # -------------------------------
 # UPDATE README
@@ -79,4 +86,4 @@ else:
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print("✅ README updated successfully with styled Top Languages!")
+print("✅ README updated successfully with portfolio-style Top Languages!")
