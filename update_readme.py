@@ -5,11 +5,11 @@ import requests
 # CONFIG
 # -------------------------------
 USERNAME = "KKPRO2007"
-README_PATH = "README.md"  # go up one folder (if script is in /scripts)
-TOKEN = os.getenv("GITHUB_TOKEN")
+README_PATH = "README.md"
+TOKEN = os.getenv("GH_TOKEN")
 
 if not TOKEN:
-    raise ValueError("❌ Please set your GITHUB_TOKEN environment variable.")
+    raise ValueError("❌ Please set your GH_TOKEN environment variable.")
 
 headers = {"Authorization": f"token {TOKEN}"}
 
@@ -53,7 +53,7 @@ top_langs_html = "<!--START_SECTION:top_langs-->\n"
 top_langs_html += "<h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>\n\n"
 top_langs_html += "<div align='center' style='background:#000;padding:15px;border-radius:12px;'>\n"
 
-for lang, bytes_count in sorted_langs[:10]:
+for lang, bytes_count in sorted_langs[:6]:
     percent = (bytes_count / total_bytes) * 100
     top_langs_html += f"<p><b>{lang}</b> — {percent:.2f}%</p>\n"
     top_langs_html += f"<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'>"

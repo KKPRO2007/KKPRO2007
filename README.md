@@ -1,6 +1,5 @@
 # Hey there! Check out my portfolio to know more about me
 
-
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
 
 <a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer">
@@ -27,18 +26,17 @@
 <h3 align='center'>🎨 Top Languages (Including Private Repos)</h3>
 
 <div align='center' style='background:#000;padding:15px;border-radius:12px;'>
-<p><b>JavaScript</b> — 48.48%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:48.48%;'></div></div>
-<p><b>CSS</b> — 24.55%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:24.55%;'></div></div>
-<p><b>HTML</b> — 21.42%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:21.42%;'></div></div>
-<p><b>Java</b> — 5.36%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:5.36%;'></div></div>
-<p><b>Python</b> — 0.19%</p>
-<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.19%;'></div></div>
+<p><b>JavaScript</b> — 84.12%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:84.12%;'></div></div>
+<p><b>TypeScript</b> — 7.63%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:7.63%;'></div></div>
+<p><b>CSS</b> — 6.31%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:6.31%;'></div></div>
+<p><b>HTML</b> — 0.86%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.86%;'></div></div>
+<p><b>SCSS</b> — 0.62%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.62%;'></div></div>
+<p><b>MDX</b> — 0.46%</p>
+<div style='background:#333;border-radius:8px;width:60%;margin:auto;margin-bottom:8px;'><div style='background:#3382ed;height:8px;border-radius:8px;width:0.46%;'></div></div>
 </div>
 <!--END_SECTION:top_langs-->
-
-
-
