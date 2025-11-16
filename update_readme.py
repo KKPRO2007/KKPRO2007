@@ -47,20 +47,31 @@ total_bytes = sum(lang_totals.values())
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
 
 # -------------------------------
-# CREATE LANGUAGE BAR SECTION (Updated with full CSS styling)
+# CREATE LANGUAGE BAR SECTION (Pure Black Theme)
 # -------------------------------
 top_langs_html = "<!--START_SECTION:top_langs-->\n"
-top_langs_html += '<div align="center" style="background:#000; padding:20px; border-radius:10px; margin:20px 0; max-width:600px; color:#fff; text-align:center; font-family:Arial,sans-serif;">\n'
-top_langs_html += '  <h3 style="color:#fff; margin-bottom:20px;">Top Languages (Including Private Repos)</h3>\n'
+top_langs_html += '<div align="center" style="background:#000000; padding:20px; border-radius:10px; margin:20px 0; max-width:600px; color:#ffffff; text-align:center; font-family:Arial,sans-serif; border:1px solid #333333;">\n'
+top_langs_html += '  <h3 style="color:#ffffff; margin-bottom:20px; font-weight:600;">Top Languages</h3>\n'
 top_langs_html += '  \n'
 top_langs_html += '  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; max-width:600px; margin:0 auto;">\n'
 
-for lang, bytes_count in sorted_langs[:5]:
+for lang, bytes_count in sorted_langs[:6]:  # Show top 6 languages
     percent = (bytes_count / total_bytes) * 100
-    top_langs_html += f'    <div style="background:#111; padding:15px; border-radius:8px; text-align:left;">\n'
-    top_langs_html += f'      <p style="color:#fff; margin:0 0 8px 0; font-weight:bold;">{lang} — {percent:.2f}%</p>\n'
-    top_langs_html += f'      <div style="background:#333; border-radius:4px; height:8px; width:100%;">\n'
-    top_langs_html += f'        <div style="background:#3382ed; height:8px; border-radius:4px; width:{percent:.2f}%;"></div>\n'
+    
+    # Determine white shade based on percentage
+    if percent >= 50:
+        fill_color = "#ffffff"  # Pure white for high percentages
+    elif percent >= 10:
+        fill_color = "#e0e0e0"  # Light gray
+    elif percent >= 1:
+        fill_color = "#b0b0b0"  # Medium gray
+    else:
+        fill_color = "#808080"  # Dark gray
+    
+    top_langs_html += f'    <div style="background:#111111; padding:15px; border-radius:8px; text-align:left; border:1px solid #333333;">\n'
+    top_langs_html += f'      <p style="color:#ffffff; margin:0 0 8px 0; font-weight:bold;">{lang} — {percent:.2f}%</p>\n'
+    top_langs_html += f'      <div style="background:#333333; border-radius:4px; height:8px; width:100%;">\n'
+    top_langs_html += f'        <div style="background:{fill_color}; height:8px; border-radius:4px; width:{percent:.2f}%;"></div>\n'
     top_langs_html += f'      </div>\n'
     top_langs_html += f'    </div>\n'
 
@@ -86,4 +97,4 @@ else:
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print("✅ README updated successfully with styled Top Languages!")
+print("✅ README updated successfully with Top Languages!")

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Top Languages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .top-languages-container {
+            background: #000000;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid #333333;
+        }
+        
+        .title {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .languages-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .language-item {
+            background: #111111;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #333333;
+        }
+        
+        .language-name {
+            color: #ffffff;
+            margin: 0 0 8px 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .progress-bar {
+            background: #333333;
+            border-radius: 4px;
+            height: 8px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 8px;
+            border-radius: 4px;
+            transition: width 1.5s ease-in-out;
+        }
+        
+        /* Different white shades based on percentage ranges */
+        .progress-high { background: #ffffff; } /* 50%+ */
+        .progress-medium { background: #e0e0e0; } /* 20%-49% */
+        .progress-low { background: #b0b0b0; } /* 5%-19% */
+        .progress-very-low { background: #808080; } /* 1%-4% */
+        .progress-minimal { background: #606060; } /* <1% */
+        
+        @media (max-width: 768px) {
+            .languages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--START_SECTION:top_langs-->
+    <div class="top-languages-container">
+        <h3 class="title">Top Languages (Including Private Repos)</h3>
+        
+        <div class="languages-grid">
+            <div class="language-item">
+                <p class="language-name">JavaScript <span>84.12%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-high" style="width: 84.12%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">TypeScript <span>7.63%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-low" style="width: 7.63%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">CSS <span>6.31%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-low" style="width: 6.31%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">HTML <span>0.86%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-minimal" style="width: 0.86%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">SCSS <span>0.62%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-minimal" style="width: 0.62%"></div>
+                </div>
+            </div>
+            
+            <div class="language-item">
+                <p class="language-name">MDX <span>0.46%</span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-minimal" style="width: 0.46%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END_SECTION:top_langs-->
+
+    <script>
+        // Animate progress bars on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressFills = document.querySelectorAll('.progress-fill');
+            
+            progressFills.forEach(fill => {
+                const width = fill.style.width;
+                fill.style.width = '0%';
+                
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
