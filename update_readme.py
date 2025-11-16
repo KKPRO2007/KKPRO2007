@@ -39,7 +39,7 @@ repos = get_all_repos()
 print(f"✅ Found {len(repos)} repositories")
 
 # -------------------------------
-# CALCULATE LANGUAGES FROM ALL REPOS
+# CALCULATE LANGUAGES
 # -------------------------------
 lang_totals = {}
 
@@ -60,10 +60,10 @@ if not lang_totals:
 total_bytes = sum(lang_totals.values())
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
 
-print("📊 All Languages Found:")
-for lang, bytes_count in sorted_langs:
+print("📊 Languages Found:")
+for lang, bytes_count in sorted_langs[:8]:
     percent = (bytes_count / total_bytes) * 100
-    print(f"  {lang}: {percent:.2f}% ({bytes_count} bytes)")
+    print(f"  {lang}: {percent:.2f}%")
 
 # Take top 6 languages
 top_languages = sorted_langs[:6]
@@ -119,8 +119,8 @@ else:
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print("✅ README updated successfully with real GitHub data!")
-print("🎯 Top Languages Displayed:")
+print("✅ README updated successfully!")
+print("🎯 Top Languages:")
 for lang, bytes_count in top_languages:
     percent = (bytes_count / total_bytes) * 100
     print(f"   {lang}: {percent:.2f}%")
