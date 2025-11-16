@@ -9,7 +9,6 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
 
 <a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-stats.vercel.app/api?username=KKPRO2007&show_icons=true&hide=&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&show_icons=true" alt="KKPRO2007's GitHub stats" /></a>
 
-
 <a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-streak-stats.herokuapp.com/?user=KKPRO2007&stroke=ffffff&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
 ## Top Languages
@@ -44,9 +43,9 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
       </div>
     </div>
     <div style="background:#111111; padding:15px; border-radius:8px; text-align:left; border:1px solid #333333;">
-      <p style="color:#ffffff; margin:0 0 8px 0; font-weight:bold;">Python — 0.38%</p>
+      <p style="color:#ffffff; margin:0 0 8px 0; font-weight:bold;">Python — 0.37%</p>
       <div style="background:#333333; border-radius:4px; height:8px; width:100%;">
-        <div style="background:#808080; height:8px; border-radius:4px; width:0.38%;"></div>
+        <div style="background:#808080; height:8px; border-radius:4px; width:0.37%;"></div>
       </div>
     </div>
   </div>
