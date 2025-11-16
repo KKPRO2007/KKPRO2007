@@ -46,8 +46,24 @@ if not lang_totals:
 total_bytes = sum(lang_totals.values())
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
 
+print("📊 Detected Languages:")
+for lang, bytes_count in sorted_langs:
+    percent = (bytes_count / total_bytes) * 100
+    print(f"  {lang}: {percent:.2f}%")
+
 # -------------------------------
-# CREATE LANGUAGE BAR SECTION (Pure Black Theme)
+# MANUAL OVERRIDE - Use your exact percentages
+# -------------------------------
+manual_languages = [
+    ("JavaScript", 48.12),
+    ("CSS", 24.32), 
+    ("HTML", 21.95),
+    ("Java", 5.28),
+    ("Python", 0.32)
+]
+
+# -------------------------------
+# CREATE LANGUAGE BAR SECTION
 # -------------------------------
 top_langs_html = "<!--START_SECTION:top_langs-->\n"
 top_langs_html += '<div align="center" style="background:#000000; padding:20px; border-radius:10px; margin:20px 0; max-width:600px; color:#ffffff; text-align:center; font-family:Arial,sans-serif; border:1px solid #333333;">\n'
@@ -55,12 +71,10 @@ top_langs_html += '  <h3 style="color:#ffffff; margin-bottom:20px; font-weight:6
 top_langs_html += '  \n'
 top_langs_html += '  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; max-width:600px; margin:0 auto;">\n'
 
-for lang, bytes_count in sorted_langs[:6]:  # Show top 6 languages
-    percent = (bytes_count / total_bytes) * 100
-    
+for lang, percent in manual_languages:
     # Determine white shade based on percentage
     if percent >= 50:
-        fill_color = "#ffffff"  # Pure white for high percentages
+        fill_color = "#ffffff"  # Pure white
     elif percent >= 10:
         fill_color = "#e0e0e0"  # Light gray
     elif percent >= 1:
@@ -97,4 +111,7 @@ else:
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print("✅ README updated successfully with Top Languages!")
+print("✅ README updated successfully with CSS included!")
+print("📋 Languages displayed:")
+for lang, percent in manual_languages:
+    print(f"   {lang}: {percent}%")
