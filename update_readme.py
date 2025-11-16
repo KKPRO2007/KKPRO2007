@@ -14,19 +14,32 @@ if not TOKEN:
 headers = {"Authorization": f"token {TOKEN}"}
 
 # -------------------------------
-# FETCH REPOS
+# FETCH ALL REPOS
 # -------------------------------
-repos_url = f"https://api.github.com/user/repos?per_page=100&type=all"
-response = requests.get(repos_url, headers=headers)
-if response.status_code != 200:
-    print("❌ Error fetching repos:", response.json())
-    exit()
+def get_all_repos():
+    repos = []
+    page = 1
+    while True:
+        repos_url = f"https://api.github.com/user/repos?per_page=100&page={page}&type=all"
+        response = requests.get(repos_url, headers=headers)
+        if response.status_code != 200:
+            print("❌ Error fetching repos:", response.json())
+            break
+            
+        page_repos = response.json()
+        if not page_repos:
+            break
+            
+        repos.extend(page_repos)
+        page += 1
+        
+    return repos
 
-repos = response.json()
+repos = get_all_repos()
 print(f"✅ Found {len(repos)} repositories")
 
 # -------------------------------
-# CALCULATE LANGUAGES
+# CALCULATE LANGUAGES FROM ALL REPOS
 # -------------------------------
 lang_totals = {}
 
@@ -34,6 +47,7 @@ for repo in repos:
     repo_name = repo["name"]
     lang_url = f"https://api.github.com/repos/{USERNAME}/{repo_name}/languages"
     lang_response = requests.get(lang_url, headers=headers)
+    
     if lang_response.status_code == 200:
         langs = lang_response.json()
         for lang, bytes_count in langs.items():
@@ -46,21 +60,13 @@ if not lang_totals:
 total_bytes = sum(lang_totals.values())
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
 
-print("📊 Detected Languages:")
+print("📊 All Languages Found:")
 for lang, bytes_count in sorted_langs:
     percent = (bytes_count / total_bytes) * 100
-    print(f"  {lang}: {percent:.2f}%")
+    print(f"  {lang}: {percent:.2f}% ({bytes_count} bytes)")
 
-# -------------------------------
-# MANUAL OVERRIDE - Use your exact percentages
-# -------------------------------
-manual_languages = [
-    ("JavaScript", 48.12),
-    ("CSS", 24.32), 
-    ("HTML", 21.95),
-    ("Java", 5.28),
-    ("Python", 0.32)
-]
+# Take top 6 languages
+top_languages = sorted_langs[:6]
 
 # -------------------------------
 # CREATE LANGUAGE BAR SECTION
@@ -71,7 +77,9 @@ top_langs_html += '  <h3 style="color:#ffffff; margin-bottom:20px; font-weight:6
 top_langs_html += '  \n'
 top_langs_html += '  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; max-width:600px; margin:0 auto;">\n'
 
-for lang, percent in manual_languages:
+for lang, bytes_count in top_languages:
+    percent = (bytes_count / total_bytes) * 100
+    
     # Determine white shade based on percentage
     if percent >= 50:
         fill_color = "#ffffff"  # Pure white
@@ -111,7 +119,8 @@ else:
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print("✅ README updated successfully with CSS included!")
-print("📋 Languages displayed:")
-for lang, percent in manual_languages:
-    print(f"   {lang}: {percent}%")
+print("✅ README updated successfully with real GitHub data!")
+print("🎯 Top Languages Displayed:")
+for lang, bytes_count in top_languages:
+    percent = (bytes_count / total_bytes) * 100
+    print(f"   {lang}: {percent:.2f}%")
