@@ -8,6 +8,8 @@
 
 ## GitHub Stats
 
+<a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-stats.vercel.app/api?username=KKPRO2007&show_icons=true&hide=&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&show_icons=true" alt="KKPRO2007's GitHub stats" /></a>
+
 <a href="http://www.github.com/KKPRO2007">
   <img 
        src="https://github-readme-stats.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&hide=stars,&title_color=ffffff&text_color=ffffff&icon_color=3382ed&bg_color=000000&hide_border=true&show_icons=true" 
