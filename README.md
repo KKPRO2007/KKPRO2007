@@ -11,9 +11,6 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
 
 <a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-streak-stats.herokuapp.com/?user=KKPRO2007&stroke=ffffff&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
-<a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" /></a>
-
 ## Top Languages
 
 <!--START_SECTION:top_langs-->
