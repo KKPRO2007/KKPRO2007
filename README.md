@@ -6,7 +6,6 @@ i# Hey there! Check out my portfolio to know more about me
 src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" /></a>
 
 ## GitHub Stats
-
 <a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-stats.vercel.app/api?username=KKPRO2007&show_icons=true&hide=&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&show_icons=true" alt="KKPRO2007's GitHub stats" /></a>
 
 <a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-streak-stats.herokuapp.com/?user=KKPRO2007&stroke=ffffff&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
