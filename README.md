@@ -1,4 +1,4 @@
-i# Hey there! Check out my portfolio to know more about me
+# Hey there! Check out my portfolio to know more about me
 
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
 
