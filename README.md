@@ -7,9 +7,7 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
 
 ## GitHub Stats
 <!-- GitHub Stats -->
-<a href="http://www.github.com/KKPRO2007">
-  <img src="https://awesome-github-stats.azurewebsites.net/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true" alt="KKPRO2007's GitHub Stats" />
-</a>
+<a href="http://www.github.com/KKPRO2007"><img src="https://github-readme-streak-stats.herokuapp.com/?user=KKPRO2007&stroke=ffffff&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
 <!-- GitHub Streak Stats -->
 <a href="http://www.github.com/KKPRO2007">
