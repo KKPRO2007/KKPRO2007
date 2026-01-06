@@ -28,9 +28,6 @@
 
 </div>
 
-<br>
-
-
 ## Contribution Graph
 <!-- Black & White Activity Graph -->
 <a href="http://www.github.com/KKPRO2007">
