@@ -30,14 +30,6 @@
 
 <br>
 
-## Contribution Chart
-
-<!-- Green GitHub-style chart -->
-<a href="http://www.github.com/KKPRO2007">
-  <img src="https://ghchart.rshah.org/KKPRO2007" alt="Contribution Chart" />
-</a>
-
-<br>
 
 ## Contribution Graph
 <!-- Black & White Activity Graph -->
