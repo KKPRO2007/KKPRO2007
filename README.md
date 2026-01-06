@@ -2,36 +2,39 @@
 
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
 
-<a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" /></a>
+<a href="https://www.github.com/KKPRO2007" target="_blank" rel="noreferrer">
+  <img src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" />
+</a>
 
-## GitHub Stats
-<!-- Self-hosted stats with private repos -->
+## 📊 GitHub Stats
+
+<div align="center">
+
+<!-- GitHub Stats Card -->
 <a href="http://www.github.com/KKPRO2007">
-  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true&cache_seconds=1800&v=3" alt="GitHub Stats" />
+  <img height="180" src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true&cache_seconds=1800&v=3" alt="GitHub Stats" />
 </a>
 
-<!-- Self-hosted top languages with private repos -->
-<a href="https://github.com/KKPRO2007" align="left">
-  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=6&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact&hide=html,css,scss&cache_seconds=1800&v=3" alt="Top Languages" />
-</a>
-## GitHub Stats
+<!-- Streak Stats Card -->
 <a href="http://www.github.com/KKPRO2007">
-  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&hide=&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&show_icons=true" alt="KKPRO2007's GitHub stats" />
+  <img height="180" src="https://streak-stats.demolab.com?user=KKPRO2007&theme=dark&background=000000&border=ffffff&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff" alt="GitHub Streak" />
 </a>
 
-<!-- GitHub Streak Stats -->
-<a href="http://www.github.com/KKPRO2007">
-  <img src="https://streak-stats.demolab.com?user=KKPRO2007&theme=dark&background=000000&border=ffffff&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff" />
-</a>
-## Top Languages
+</div>
 
-<!-- Self-hosted Top Languages (with private repos) -->
-<a href="https://github.com/KKPRO2007" align="left">
-  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=6&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact&hide=html,css,scss&cache_seconds=86400&v=2024" alt="Top Languages" />
+## 🔝 Top Languages
+
+<div align="center">
+
+<!-- GitHub Top Languages Card -->
+<a href="https://github.com/KKPRO2007" align="center">
+  <img height="180" src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=6&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact&hide=html,css,scss&cache_seconds=1800&v=3" alt="Top Languages" />
 </a>
 
-<!--START_SECTION:top_langs-->
+</div>
+
+## 📈 Language Breakdown
+
 <div align="center" style="background:#000000; padding:20px; border-radius:10px; margin:20px 0; max-width:600px; color:#ffffff; text-align:center; font-family:Arial,sans-serif; border:1px solid #333333;">
   <h3 style="color:#ffffff; margin-bottom:20px; font-weight:600;">Top Languages</h3>
   
@@ -68,6 +71,3 @@ src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the
     </div>
   </div>
 </div>
-<!--END_SECTION:top_langs-->
-
-
