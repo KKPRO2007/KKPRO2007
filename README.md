@@ -6,7 +6,15 @@
 src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" /></a>
 
 ## GitHub Stats
-<!-- GitHub Stats -->
+<!-- Self-hosted stats with private repos -->
+<a href="http://www.github.com/KKPRO2007">
+  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true&cache_seconds=1800&v=3" alt="GitHub Stats" />
+</a>
+
+<!-- Self-hosted top languages with private repos -->
+<a href="https://github.com/KKPRO2007" align="left">
+  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=6&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact&hide=html,css,scss&cache_seconds=1800&v=3" alt="Top Languages" />
+</a>
 ## GitHub Stats
 <a href="http://www.github.com/KKPRO2007">
   <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&hide=&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&show_icons=true" alt="KKPRO2007's GitHub stats" />
