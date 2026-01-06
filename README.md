@@ -12,10 +12,10 @@
   <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true&cache_seconds=1800&v=4" alt="KKPRO2007's GitHub stats" style="margin-right: 20px;" />
 </a>
 
+<!-- This ALWAYS works -->
 <a href="http://www.github.com/KKPRO2007">
-  <img src="https://github-readme-streak-stats-three-steel.vercel.app?user=KKPRO2007&theme=dark&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=KKPRO2007&theme=dark&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" />
 </a>
-
 <br>
 
 ## Top Languages
