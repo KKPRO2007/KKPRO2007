@@ -18,13 +18,23 @@
 
 <br>
 
-## Activity & Languages
+## Top Languages
 
 <div align="left">
   
-<!-- Top Languages -->
 <a href="https://github.com/KKPRO2007">
   <img height="200" src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=8&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact" alt="Top Languages" style="margin-right: 20px;" />
+</a>
+
+</div>
+
+<br>
+
+## Contribution Chart
+
+<!-- Green GitHub-style chart -->
+<a href="http://www.github.com/KKPRO2007">
+  <img src="https://ghchart.rshah.org/KKPRO2007" alt="Contribution Chart" />
 </a>
 
 <!-- Black & White Activity Graph -->
@@ -32,15 +42,3 @@
   <img height="200" src="https://github-readme-activity-graph.vercel.app/graph?username=KKPRO2007&theme=github-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Activity Graph" />
 </a>
 
-</div>
-
-<br>
-
-
-
-## 📅 Contribution Chart
-
-<!-- Green GitHub-style chart -->
-<a href="http://www.github.com/KKPRO2007">
-  <img src="https://ghchart.rshah.org/KKPRO2007" alt="Contribution Chart" />
-</a>
