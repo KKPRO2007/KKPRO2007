@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" />
 </a>
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <a href="http://www.github.com/KKPRO2007">
   <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true" alt="Stats" style="margin-right: 20px;" />
@@ -18,7 +18,7 @@
 
 <br>
 
-## 💻 Activity & Languages
+## Activity & Languages
 
 <div align="left">
   
@@ -36,23 +36,7 @@
 
 <br>
 
-## 📈 Black & White Graphs
 
-<div align="left">
-  
-<!-- Black & White Stats -->
-<a href="http://www.github.com/KKPRO2007">
-  <img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KKPRO2007&theme=github_dark" alt="GitHub Stats" style="margin-right: 20px;" />
-</a>
-
-<!-- Black & White Languages -->
-<a href="http://www.github.com/KKPRO2007">
-  <img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=KKPRO2007&theme=github_dark" alt="Most Used Languages" />
-</a>
-
-</div>
-
-<br>
 
 ## 📅 Contribution Chart
 
