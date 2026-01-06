@@ -1,4 +1,4 @@
-# Hey there! Check out my portfolio to know more about me
+[# Hey there! Check out my portfolio to know more about me
 
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
 
@@ -27,3 +27,4 @@
 <a href="https://github.com/KKPRO2007">
   <img src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=8&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact&cache_seconds=86400" alt="Top Languages" />
 </a>
+](https://github-profile-trophy.vercel.app/?username=KKPRO2007&theme=onedark)
