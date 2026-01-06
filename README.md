@@ -6,8 +6,6 @@
   <img src="https://img.shields.io/github/followers/KKPRO2007?logo=github&style=for-the-badge&color=ffffff&labelColor=000000" />
 </a>
 
-
-
 ## 📊 GitHub Stats
 
 <a href="http://www.github.com/KKPRO2007">
@@ -29,9 +27,27 @@
   <img height="200" src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=8&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact" alt="Top Languages" style="margin-right: 20px;" />
 </a>
 
-<!-- Activity Graph with green theme -->
+<!-- Black & White Activity Graph -->
 <a href="http://www.github.com/KKPRO2007">
-  <img height="200" src="https://github-readme-activity-graph.vercel.app/graph?username=KKPRO2007&theme=github&bg_color=000000&color=ffffff&line=00ff00&point=ffffff&area=true&area_color=00ff00&hide_border=true" alt="Activity Graph" />
+  <img height="200" src="https://github-readme-activity-graph.vercel.app/graph?username=KKPRO2007&theme=github-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Activity Graph" />
+</a>
+
+</div>
+
+<br>
+
+## 📈 Black & White Graphs
+
+<div align="left">
+  
+<!-- Black & White Stats -->
+<a href="http://www.github.com/KKPRO2007">
+  <img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KKPRO2007&theme=github_dark" alt="GitHub Stats" style="margin-right: 20px;" />
+</a>
+
+<!-- Black & White Languages -->
+<a href="http://www.github.com/KKPRO2007">
+  <img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=KKPRO2007&theme=github_dark" alt="Most Used Languages" />
 </a>
 
 </div>
@@ -40,7 +56,7 @@
 
 ## 📅 Contribution Chart
 
-<!-- Cool GitHub-style green chart -->
+<!-- Green GitHub-style chart -->
 <a href="http://www.github.com/KKPRO2007">
-  <img src="https://ghchart.rshah.org/KKPRO2007/00ff00" alt="Contribution Chart" style="background-color: #000000; padding: 10px; border-radius: 10px;" />
+  <img src="https://ghchart.rshah.org/KKPRO2007" alt="Contribution Chart" />
 </a>
