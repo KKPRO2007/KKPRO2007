@@ -1,4 +1,4 @@
-[# Hey there! Check out my portfolio to know more about me
+# Hey there! Check out my portfolio to know more about me
 
 [![My Portfolio](https://img.shields.io/badge/My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&color=000000&labelColor=000000&logoWidth=50)](https://kkprofessional.vercel.app)
 
@@ -14,11 +14,7 @@
 </a>
 
 <!-- Streak with multiple fallback services -->
-<a href="http://www.github.com/KKPRO2007">
-  <img src="https://streak-stats.demolab.com/?user=KKPRO2007&theme=dark&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" 
-       onerror="this.onerror=null; this.src='https://github-readme-streak-stats.vercel.app/?user=KKPRO2007&theme=dark&background=000000&hide_border=true';"
-       alt="GitHub Streak" />
-</a>
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=KKPRO2007&theme=dark&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true)
 
 <br>
 
@@ -27,4 +23,3 @@
 <a href="https://github.com/KKPRO2007">
   <img src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=8&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact&cache_seconds=86400" alt="Top Languages" />
 </a>
-](https://github-profile-trophy.vercel.app/?username=KKPRO2007&theme=onedark)
