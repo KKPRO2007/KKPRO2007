@@ -13,7 +13,7 @@
 </a>
 
 <a href="http://www.github.com/KKPRO2007">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=KKPRO2007&theme=dark&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats-snowy-nu.vercel.app?user=KKPRO2007&theme=black-white&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" />
 </a>
 
 <br>
