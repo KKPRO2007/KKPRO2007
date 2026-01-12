@@ -25,7 +25,7 @@
 <div align="left">
   
 <a href="https://github.com/KKPRO2007">
-  <img height="200" src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=8&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact" alt="Top Languages" style="margin-right: 20px;" />
+  <img height="200" src="https://github-readme-stats-lyart-six-14.vercel.app/api/top-langs/?username=KKPRO2007&langs_count=12&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&count_private=true&include_all_commits=true&layout=compact" alt="Top Languages" style="margin-right: 20px;" />
 </a>
 
 </div>
