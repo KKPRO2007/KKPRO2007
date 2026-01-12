@@ -11,7 +11,7 @@
 ## GitHub Stats
 
 <a href="http://www.github.com/KKPRO2007">
-  <img src="https://github-readme-stats-lyart-six-14.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true" alt="Stats" style="margin-right: 20px;" />
+  <img src="https://github-readme-stats-kkpro.vercel.app/api?username=KKPRO2007&show_icons=true&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=000000&hide_border=true&include_all_commits=true&no-cache=1" alt="Stats" style="margin-right: 20px;" />
 </a>
 
 <a href="http://www.github.com/KKPRO2007">
