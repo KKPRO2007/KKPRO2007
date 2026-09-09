@@ -30,7 +30,6 @@
 </div>
 
 ## Contribution Graph
-<!-- Black & White Activity Graph -->
 <a href="http://www.github.com/KKPRO2007">
-  <img height="200" src="https://github-readme-activity-graph.vercel.app/graph?username=KKPRO2007&theme=github-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Activity Graph" />
+  <img height="200" src="https://github-readme-activity-graph-omega-five.vercel.app/graph?username=KKPRO2007&theme=github-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" alt="Activity Graph" />
 </a>
